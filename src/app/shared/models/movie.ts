@@ -1,0 +1,25 @@
+export interface Movie{
+    id: number;
+    title: string;
+    overview: string;
+    tagline: string;
+    budget: number;
+    revenue: number;
+    homePage?: any;
+    imdbUrl: string;
+    tmdbUrl: string;
+    posterUrl: string;
+    backdropUrl: string;
+    originalLanguage: string;
+    releaseDate: string;
+    runTime: number;
+    isReleased: boolean;
+    price: number;
+    movieGenres: MovieGenre[];
+  }
+  
+  interface MovieGenre {
+    movieId: number;
+    genreId: number;
+    genre?: any;
+  }
